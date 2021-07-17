@@ -1,5 +1,4 @@
 header {
-  width: 1200px;
   height: 150px;
   margin: 0 auto;
   padding: 10px 0;
@@ -13,6 +12,7 @@ figure {
   width: 116px;
   height: 116px;
   text-align: center;
+  margin-left: 100px;
 }
 
 figure figcaption {
@@ -48,9 +48,13 @@ figure figcaption::after {
   justify-content: space-between;
   align-items: flex-start;
   list-style-type: none;
-  cursor: pointer;
   font-size: 16px;
   font-family: "merriweather";
+  margin-right: 100px;
+}
+
+.languages li {
+  cursor: pointer;
 }
 
 .lanIsSelected {
