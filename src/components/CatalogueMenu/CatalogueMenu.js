@@ -4,19 +4,16 @@ import styles from './CatalogueMenu.module.css';
 class CatalogueMenu extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {btnOneState : true}
-    this.state = {btnTwoState : false}
+    this.state = {btnState : true}
   }
 
   toggleClassMethod = (event) => {
-    if(event.target.innerText.toUpperCase() === 'OUR LATEST SALES' && !this.state.btnOneState){
-      this.setState({btnOneState : (this.state.btnTwoState)});
-      this.setState({btnTwoState : (this.state.btnOneState)});
+    if(event.target.innerText.toUpperCase() === 'OUR LATEST SALES' && this.state.btnState === false){
+      this.setState({btnState : (!this.state.btnState)});
     }
       
-    else if(event.target.innerText.toUpperCase() === 'OUR LATEST RENTS' && this.state.btnTwoState){
-      this.setState({btnOneState : (!this.state.btnOneState)});
-      this.setState({btnTwoState : (!this.state.btnTwoState)});
+    else if(event.target.innerText.toUpperCase() === 'OUR LATEST RENTS' && this.state.btnState === true){
+      this.setState({btnState : (!this.state.btnState)});
     }
   }
 
@@ -26,12 +23,12 @@ class CatalogueMenu extends React.Component {
         <ul>
           <li>
             <button 
-              className={this.state.btnOneState === true ? styles.isSelected : styles.isNotSelected }
+              className={this.state.btnState === true ? styles.isSelected : styles.isNotSelected }
               onClick={(e) => this.toggleClassMethod(e)}>OUR LATEST SALES</button>
           </li>
           <li>
             <button 
-              className={this.state.btnTwoState === true ? styles.isSelected : styles.isNotSelected }
+              className={this.state.btnState === false ? styles.isSelected : styles.isNotSelected }
               onClick={(e) => this.toggleClassMethod(e)}>OUR LATEST RENTS</button>
           </li>
         </ul>
