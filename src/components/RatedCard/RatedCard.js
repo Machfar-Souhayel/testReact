@@ -10,7 +10,18 @@ class RatedCard extends React.Component {
   render() {
     return (
       <div className={styles.RatedCard}>
-        <p>{this.state.paragraph}</p>
+        <div>
+          <h1>Gilles D. (Ixelles)</h1>  
+          <h2>&#9733; &#9733; &#9733; &#9733; &#9733;</h2>
+        </div>
+        <div>
+          <p>{this.state.paragraph}</p>
+          <ul>
+            <li><img src="/icons/rightArrow.png" alt="arrow pointing to the right"/></li>
+            <li><img src="/icons/leftArrow.png" alt="arrow pointing to the left"/></li>
+          </ul>
+        </div>
+        
       </div>
   );
   }

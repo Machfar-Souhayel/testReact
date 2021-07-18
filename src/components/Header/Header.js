@@ -8,9 +8,9 @@ class Header extends React.Component {
   }
 
   toggleLanguageMethod = (event) => {
-    if(event.target.innerText.toUpperCase() === 'EN' && this.state.toggleLanguage)
+    if(event.target.innerText.toUpperCase() === 'FR' && !this.state.toggleLanguage)
       this.setState({toggleLanguage : (!this.state.toggleLanguage)});
-    else if(event.target.innerText.toUpperCase() === 'FR' && !this.state.toggleLanguage)
+    else if(event.target.innerText.toUpperCase() === 'EN' && this.state.toggleLanguage)
       this.setState({toggleLanguage : (!this.state.toggleLanguage)});
   }
 

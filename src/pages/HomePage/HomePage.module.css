@@ -12,6 +12,14 @@ img.showcaseImage {
   z-index: -10;
 }
 
+section.showcaseSection {
+  height: 854px;
+}
+
+section.catalogueAndContactSection {
+  padding-top: 20px;
+  background-color: #f2f2f2;
+}
 /* On screens that are 1200px or less */
 @media screen and (max-width: 1500px) {
   img.showcaseImage {

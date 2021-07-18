@@ -7,6 +7,7 @@ import Footer from './../../components/Footer/Footer.js';
 import Description from './../../components/Description/Description.js';
 import RatedCard from './../../components/RatedCard/RatedCard.js'
 import ExpertiseCard from '../../components/ExpertiseCard/ExpertiseCard';
+import CatalogueMenu from '../../components/CatalogueMenu/CatalogueMenu';
 
 
 class HomePage extends React.Component {
@@ -15,10 +16,16 @@ class HomePage extends React.Component {
     return (
       <div className={styles.container}>
         <img src="/images/chowcaseImage.png" alt="chowcase background" className={styles.showcaseImage}/>
-        <Header />
-        <Description />
-        <RatedCard />
-        <ExpertiseCard />
+        <section className={styles.showcaseSection}>
+          <Header />
+          <Description />
+          <RatedCard />
+          <ExpertiseCard />
+        </section>
+        <section className={styles.catalogueAndContactSection}>
+          <CatalogueMenu />
+        </section>
+        
         <Footer />
       </div>
     );
