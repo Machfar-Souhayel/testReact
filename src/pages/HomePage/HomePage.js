@@ -8,6 +8,7 @@ import Description from './../../components/Description/Description.js';
 import RatedCard from './../../components/RatedCard/RatedCard.js'
 import ExpertiseCard from '../../components/ExpertiseCard/ExpertiseCard';
 import CatalogueMenu from '../../components/CatalogueMenu/CatalogueMenu';
+import CardComponent from '../../components/CardComponent/CardComponent';
 
 
 class HomePage extends React.Component {
@@ -24,6 +25,11 @@ class HomePage extends React.Component {
         </section>
         <section className={styles.catalogueAndContactSection}>
           <CatalogueMenu />
+          <div className={styles.cardsContainer}>
+            <CardComponent />
+            <CardComponent />
+            <CardComponent />
+          </div>
         </section>
         
         <Footer />

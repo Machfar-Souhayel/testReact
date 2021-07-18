@@ -88,7 +88,7 @@
 /* On screens that are 576px or less*/
 @media screen and (max-width: 576px) {
   div.RatedCard {
-    width: 450px;
+    max-width: 450px;
     margin: 0 auto;
   }
 

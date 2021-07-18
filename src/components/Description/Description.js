@@ -25,12 +25,11 @@ class Description extends React.Component {
         <h1>{this.state.mainTitle}</h1>
         <h3>{this.state.secondTitle}</h3>
         <p>{this.state.paragraph.header}</p>
-        <p>{this.state.paragraph.expertise
+        {this.state.paragraph.expertise
             .map(el => { 
               return <p>{el}</p>
             })
-          }
-        </p>
+        }
         
       </div>
   );
